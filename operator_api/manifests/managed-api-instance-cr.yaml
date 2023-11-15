@@ -1,7 +1,7 @@
 apiVersion: "my-platfom.com/v1"
 kind: ManagedApi
 metadata:
-  name: example-managed-api
+  name: managed-api-instance-cr
   namespace: simple-api
   finalizers: []
 spec:
