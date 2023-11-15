@@ -5,8 +5,7 @@ This repo contains 2 services:
 - A proof of concept k8s oprator in `operator_api` folder
 
 ## Operator
-A proof of concept kubernetes operator using `kopf` python framework.
-Actions are just calling the `simple_api` service in the cluster.
+A proof of concept kubernetes operator using `kopf` python framework. Actions are just calling the `simple_api` service in the cluster.  
 Manifests folder contains all required SA, CRD, etc.
 
 ## Api
