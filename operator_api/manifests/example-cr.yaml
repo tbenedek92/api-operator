@@ -1,0 +1,12 @@
+apiVersion: "my-platfom.com/v1"
+kind: ManagedApi
+metadata:
+  name: example-managed-api
+  namespace: simple-api
+  finalizers: []
+spec:
+  endpoint: "http://simple-api-service.simple-api.svc.cluster.local"
+  payload:
+    name: "ExampleAPI"
+    version: "1.0.0"
+    release: true

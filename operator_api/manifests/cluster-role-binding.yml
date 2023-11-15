@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: managed-api-controller-rolebinding-cluster
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: managed-api-controller-role-cluster
+subjects:
+  - kind: ServiceAccount
+    namespace: simple-api
+    name: managed-api-controller-sa
